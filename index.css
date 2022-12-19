@@ -2,11 +2,25 @@
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-
+    background-color: #8a8acf;
+    justify-content: center;
 }
 .user-short-info{
-    background-color: orange;
-    width: 50%;
+    background-color: #e6ae4c;
+    height: 60px;
+    width: 45%;
     display: flex;
+    flex-direction: column;
     justify-content: space-around;
+    margin: 10px;
+    align-items: center;
+}
+.post-button{
+    width: 90%;
+    color: orange;
+}
+.posts-short-info{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
 }

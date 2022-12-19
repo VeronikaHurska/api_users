@@ -1,0 +1,12 @@
+.main-div{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+}
+.user-short-info{
+    background-color: orange;
+    width: 50%;
+    display: flex;
+    justify-content: space-around;
+}

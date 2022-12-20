@@ -18,9 +18,61 @@
 .post-button{
     width: 90%;
     color: orange;
+    height: 25px;
+    font-size: 20px;
+    font-weight: bold;
+    border: 2px orange solid;
+    margin: 10px;
 }
 .posts-short-info{
     display: flex;
+    flex-direction: column;
+    margin: 5px;
+    flex-wrap: wrap;
+    width: 18%;
+
+    background-color: #e6ae4c;
+}
+.div-for-button{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.full-user-info{
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+    background-color: #8a8acf;
+    align-items: center;
+}
+.user-element {
+    display: flex;
+    margin: 5px;
+    background-color: #e6ae4c;
+    font-size: 20px;
+}
+.all-posts-div{
+    display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    background-color: #8a8acf;
+    align-items: flex-end;
+    justify-content: center;
+}
+.div-one-comment{
+    display: flex;
+    flex-direction: column;
+    margin: 6px;
+    background-color: #8a8acf;
+}
+.div-comment-key{
+    background-color: #e6ae4c;
+    margin: 4px;
+}
+.post-block{
+    display: flex;
+    flex-direction: column;
+    margin: 6px;
+    background-color: #8a8acf;
 }

@@ -16,6 +16,8 @@ fetch(`https://jsonplaceholder.typicode.com/posts/` + id)
         fetch(`https://jsonplaceholder.typicode.com/posts/${post.id}/comments`)
             .then(response => response.json())
             .then(comments => {
+                let allCommentsDiv = document.createElement('div');
+                allCommentsDiv.classList.add('div-comments')
                 for (const comment of comments) {
                     let divOneComment = document.createElement('div')
                     divOneComment.classList.add('div-one-comment')
@@ -24,8 +26,8 @@ fetch(`https://jsonplaceholder.typicode.com/posts/` + id)
                         div.classList.add("div-comment-key")
                         div.innerText = `${commentKey}: ${comment[commentKey]}`
                         divOneComment.appendChild(div)
-                        document.body.appendChild(divOneComment)
-
+                        allCommentsDiv.appendChild(divOneComment)
+                        document.body.appendChild(allCommentsDiv)
                     }
 
                 }
